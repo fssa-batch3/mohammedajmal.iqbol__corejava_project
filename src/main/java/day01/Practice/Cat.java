@@ -40,9 +40,9 @@ public class Cat {
     	cat1.setAge(4);
     	cat1.setSpeaks("Meow!");
     	Cat cat2 = new Cat();
-    	cat1.setColor("white");
-    	cat1.setAge(3);
-    	cat1.setSpeaks("Meow!");
+    	cat2.setColor("white");
+    	cat2.setAge(3);
+    	cat2.setSpeaks("Meow!");
 
 
         // Print the attributes of each Dog
@@ -52,8 +52,8 @@ public class Cat {
         System.out.println("Speaks: " + cat1.getSpeaks());
 
         System.out.println("Cat 2:");
-        System.out.println("Age: " + cat1.getAge());
-        System.out.println("Color: " + cat1.getColor());
-        System.out.println("Speaks: " + cat1.getSpeaks());
+        System.out.println("Age: " + cat2.getAge());
+        System.out.println("Color: " + cat2.getColor());
+        System.out.println("Speaks: " + cat2.getSpeaks());
     }
 }
