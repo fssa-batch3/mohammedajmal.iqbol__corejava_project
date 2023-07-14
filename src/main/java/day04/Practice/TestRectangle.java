@@ -1,5 +1,4 @@
-package day04.practice;
-import day04.Practice.*;
+package day04.Practice;
 
 public class TestRectangle {
     public static void main(String[] args) {
