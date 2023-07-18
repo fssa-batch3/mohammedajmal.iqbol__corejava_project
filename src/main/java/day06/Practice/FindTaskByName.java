@@ -13,15 +13,13 @@ public class FindTaskByName {
 	}
 	
 	public boolean isThere() {
-		
+		boolean match = false;
 		for(String a : array){
 			String index = a.replaceAll("\\s+\\d+", "");
-			if(name.contains(index)){
-                  return true;
+			if(!name.contains(index)){
+                  match = true;
 			}
 		}
-		
-		return false;
+		return match;
 	}
-	
 }

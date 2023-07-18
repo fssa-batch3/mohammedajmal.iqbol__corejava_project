@@ -29,14 +29,13 @@ public class TaskTest {
 		System.out.println(array.toString().replaceAll("\\[|\\]", "").replaceAll(", ", ""));
 		
 		
-		FindTaskByName f = new FindTaskByName("Wake Up",array);
+		FindTaskByName f = new FindTaskByName("Go to Sleep",array);
 		
 		if(f.isThere()) {
 			System.out.println("task is there");
 		} else {
 			System.out.println("task is not there");
 		}
-		
 		
 	}
 }
