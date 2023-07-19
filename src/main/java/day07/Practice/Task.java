@@ -40,7 +40,7 @@ public class Task {
         return Objects.hash(id, name, deadline);
     }
 
-    public static void main(String[] args) {
+    public static oid main(String[] args) {
         ArrayList<Task> arr = new ArrayList <> ();
         Task task1 = new Task("Todo",1,"2023-07-22");
         Task task4 = new Task("Todo",1,"2023-07-22");
@@ -52,10 +52,9 @@ public class Task {
         arr.add(task4);
 
         HashSet<Task> distinctTask = new HashSet<>(arr);
-
+        
         for (Task i: distinctTask) {
             System.out.println(i);
         }
-
     }
 }
