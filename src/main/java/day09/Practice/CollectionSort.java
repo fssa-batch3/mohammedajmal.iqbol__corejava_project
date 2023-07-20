@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class ColleactionSort {
+public class CollectionSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

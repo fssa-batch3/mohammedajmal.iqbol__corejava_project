@@ -22,7 +22,6 @@ public class TreeSetDemo {
             System.out.println(cityName);
         }
          
-         
     }
  
 }

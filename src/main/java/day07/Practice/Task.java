@@ -17,6 +17,18 @@ public class Task {
         this.id = id;
         this.deadline = LocalDate.parse(date);
     }
+    
+    public String getName() {
+    	return name;
+    }
+    
+    public LocalDate getDate() {
+    	return deadline;
+    }
+    
+    public int getId() {
+    	return id;
+    }
 
     @Override
     public String toString() {
@@ -40,7 +52,7 @@ public class Task {
         return Objects.hash(id, name, deadline);
     }
 
-    public static oid main(String[] args) {
+    public static void main(String[] args) {
         ArrayList<Task> arr = new ArrayList <> ();
         Task task1 = new Task("Todo",1,"2023-07-22");
         Task task4 = new Task("Todo",1,"2023-07-22");
@@ -56,5 +68,6 @@ public class Task {
         for (Task i: distinctTask) {
             System.out.println(i);
         }
+        
     }
 }

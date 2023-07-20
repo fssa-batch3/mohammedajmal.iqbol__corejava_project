@@ -27,8 +27,7 @@ public class TaskTest {
 		array.add(task5);
 		
 		System.out.println(array.toString().replaceAll("\\[|\\]", "").replaceAll(", ", ""));
-		
-		
+			
 		FindTaskByName f = new FindTaskByName("Go to Sleep",array);
 		
 		if(f.isThere()) {
