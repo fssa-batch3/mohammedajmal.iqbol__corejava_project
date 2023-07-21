@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-class Task {
+public class Task {
 	private int id;
 	private String name;
     private LocalDate deadline;
