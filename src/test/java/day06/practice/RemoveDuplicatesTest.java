@@ -10,14 +10,14 @@ import day06.Practice.*;
 
 import org.junit.jupiter.api.Test;
 
-public class TaskTest {
+public class RemoveDuplicatesTest {
 	@Test
 	public void GetTodoNameAndPriority() {
-		Task t = new Task("Wake Up",1);
+		RemoveDuplicateArrayList r = new RemoveDuplicateArrayList();
 
 		// valid input
-		assertEquals("Wake Up", t.gettaskName());
-		assertEquals(1, t.getTaskPriority());
+		r.setA("Tirunelveli");
+		assertEquals("Tirunelveli", r.getA());
 		
 	}
 }

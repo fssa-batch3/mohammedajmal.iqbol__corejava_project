@@ -1,6 +1,6 @@
 package day05.Practice;
 
-class Account {
+public class Account {
     private String accNo;
     private double balance;
 
@@ -75,6 +75,7 @@ class IciciATM implements ATM {
         return true;
     }
 
+    
     @Override
     public boolean withdraw(Account account, double amount) throws Exception {
         if (account.getBalance() < 10000) {

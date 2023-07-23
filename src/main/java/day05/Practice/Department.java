@@ -1,12 +1,20 @@
 package day05.Practice;
 
-class Department {
+public class Department {
     String deptName;
     int deptId;
 
     public Department(String deptName, int deptId) {
         this.deptName = deptName;
         this.deptId = deptId;
+    }
+    
+    public String getdeptName() {
+    	return deptName;
+    }
+    
+    public int getdeptId() {
+    	return deptId;
     }
 
     @Override

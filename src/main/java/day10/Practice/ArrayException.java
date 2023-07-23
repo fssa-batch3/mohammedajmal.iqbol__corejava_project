@@ -3,16 +3,17 @@ package day10.Practice;
 import java.util.ArrayList;
 
 class User {
-    int id;
-    String name;
-    String emailId;
-    
+	
+	private int id;
+	private String name;
+	private String emailId;
     
     public User(int id, String name, String emailId) {
         this.id = id;
         this.name = name;
         this.emailId = emailId;
     }
+    
 }
 
 class UserAlreadyExistsException extends Exception {
@@ -50,8 +51,8 @@ public class  ArrayException {
             User user2 = new User(2, "kamalesh", "kamal@gmail.com");
             userManager.register(user2);
             System.out.println("User registered: " + user2.name);
-
-           
+            
+            
             User duplicateUser = new User(3, "Ajaml", "freekyajmal@gmail.com");
             userManager.register(duplicateUser);
             System.out.println("User registered: " + duplicateUser.name);

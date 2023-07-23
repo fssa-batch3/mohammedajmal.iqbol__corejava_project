@@ -4,7 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RemoveDuplicateArrayList {
-  public static void main(String[] args) {
+	
+	private String a;
+	
+	
+  public String getA() {
+		return a;
+	}
+
+
+	public void setA(String a) {
+		this.a = a;
+	}
+
+
+public static void main(String[] args) {
+	
+	RemoveDuplicateArrayList r = new RemoveDuplicateArrayList();
 	  
 	  List<String> cityList = new ArrayList<String>();
 		cityList.add("Chennai");
