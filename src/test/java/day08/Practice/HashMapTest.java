@@ -16,5 +16,9 @@ public class HashMapTest {
 		String line1 = "hr,hr,hr";
 		String str = h.Array(line1).toString();
 		assertEquals("{hr=3}",str);
+		
+		String line2 = "sales,sales";
+		String str2 = h.Array(line2).toString();
+		assertEquals("{sales=1}",str2);
 	}
 }

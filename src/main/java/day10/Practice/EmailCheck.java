@@ -31,7 +31,6 @@ class EmailValidate {
 	}
 }
 
-
 public class EmailCheck {
 	public static void main(String[] args) {
 		

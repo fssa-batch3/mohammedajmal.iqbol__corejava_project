@@ -20,7 +20,11 @@ public class RemoveDuplicate {
 		array.add(150);
 		array.add(200);
 		
+		System.out.println("arrayList " + array);
+		
 		HashSet<Integer> array2 = new HashSet<>(array);
+		
+		System.out.println("HashSet " + array2);
 		
 		for(int i : array2) {
 			System.out.println(i);

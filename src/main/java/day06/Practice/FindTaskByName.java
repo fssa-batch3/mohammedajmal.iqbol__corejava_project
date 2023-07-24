@@ -4,22 +4,24 @@ import java.util.ArrayList;
 
 public class FindTaskByName {
 	
-	String name;
-	ArrayList<String> array = new ArrayList<>();
+	static String name;
+	static ArrayList<String> array = new ArrayList<>();
 
 	public FindTaskByName(String name, ArrayList<String> array) {
 		this.name = name;
 		this.array = array;
 	}
+
 	
-	public boolean isThere() {
-		boolean match = false;
+	
+public static boolean isThere() {
 		for(String a : array){
 			String index = a.replaceAll("\\s+\\d+", "");
-			if(!name.contains(index)){
-                  match = true;
-			}
+			if(!name.equals(index)){
+                 return false;
+		     }
 		}
-		return match;
+		return true;
 	}
+
 }

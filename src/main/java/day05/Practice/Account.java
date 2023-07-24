@@ -29,7 +29,7 @@ public class Account {
 }
 
 // Interface
-public interface ATM {
+interface ATM {
     boolean deposit(Account account, double amount);
     boolean withdraw(Account account, double amount) throws Exception;
     double getBalance(Account account); // Pass the Account object as a parameter

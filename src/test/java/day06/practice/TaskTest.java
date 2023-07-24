@@ -18,6 +18,5 @@ public class TaskTest {
 		// valid input
 		assertEquals("Wake Up", t.gettaskName());
 		assertEquals(1, t.getTaskPriority());
-		
 	}
 }

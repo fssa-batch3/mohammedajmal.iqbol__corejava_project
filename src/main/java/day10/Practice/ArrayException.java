@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 class User {
 	
-	private int id;
-	private String name;
-	private String emailId;
+	public int id;
+	public String name;
+	public String emailId;
     
     public User(int id, String name, String emailId) {
         this.id = id;

@@ -61,7 +61,6 @@ class Account implements Comparable<Account> {
 	public String toString() {
 		return "Account [accNo=" + accNo + ", name=" + name + ", balance=" + balance + "]";
 	}
-
 }
 
 public class ComparableInterfaceDemo {

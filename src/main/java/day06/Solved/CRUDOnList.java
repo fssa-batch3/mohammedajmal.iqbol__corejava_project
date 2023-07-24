@@ -39,6 +39,7 @@ public class CRUDOnList {
 		// Reading the element at index 1 again
 		elementAtOne = cityList.get(1);
 		System.out.println(elementAtOne);
+		System.out.println(cityList);
 
 		// Deleting elements
 

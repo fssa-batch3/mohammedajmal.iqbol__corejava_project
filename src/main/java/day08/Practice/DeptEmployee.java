@@ -44,6 +44,6 @@ public class DeptEmployee {
             }
             System.out.println(output.toString());
         }
-        
+
     }
 }
