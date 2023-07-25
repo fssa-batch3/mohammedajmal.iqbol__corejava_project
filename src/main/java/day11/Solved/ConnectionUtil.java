@@ -19,13 +19,12 @@ public class ConnectionUtil {
             con = DriverManager.getConnection(url, userName, passWord);
         } catch (Exception e) {
             e.printStackTrace();
-            throw new RuntimeException("Unable to connect to the database");
+
         }
         return con;
     }
-     
     public static void close(Connection conn , Statement stmt, ResultSet rs){
-         
+
         try
         {
             if ( rs != null ){
@@ -42,5 +41,10 @@ public class ConnectionUtil {
              e.printStackTrace();
 						 // No need re throw the exception.
         }
+    }
+
+    public static void main(String[]args){
+        Connection conn = getConnection();
+        System.out.println(conn);
     }
 }
