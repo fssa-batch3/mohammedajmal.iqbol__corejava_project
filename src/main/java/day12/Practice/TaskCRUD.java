@@ -135,12 +135,13 @@ public class TaskCRUD {
 
         //create tasks
 
-        Task t = new Task(1,"Wake Up Early","Not Completed");
+//        Task t = new Task(1,"Wake Up Early","Not Completed");
+        Task tnew = new Task(1,"go to bed Early","Pending");
 //        Task t3 = new Task(2,"bath","Completed");
         TaskCRUD t1 = new TaskCRUD();
 //        t1.createTask(t);
 //        t1.createTask(t3);
-//        t1.updateTask(t);
+//        t1.createTask(tnew);
 
         // read or select tasks
         Task t1update = new Task("Wake Up Early","Completed");
@@ -158,7 +159,6 @@ public class TaskCRUD {
         }
 
     }
-
 
 }
 
