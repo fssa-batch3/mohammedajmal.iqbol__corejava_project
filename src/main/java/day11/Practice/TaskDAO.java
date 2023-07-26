@@ -72,9 +72,11 @@ public class TaskDAO {
 
     public static void main(String[] args) throws DAOException, SQLException {
         Task t = new Task(1,"Wake Up Early","Not Completed");
+        Task t5 = new Task(3,"Early","Not Completed");
+
         Task t3 = new Task(2,"bath","Completed");
         TaskDAO t1 = new TaskDAO();
-//        t1.createTask(t);
+        t1.createTask(t5);
 //        t1.createTask(t3);
     }
 

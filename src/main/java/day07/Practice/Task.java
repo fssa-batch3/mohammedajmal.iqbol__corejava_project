@@ -18,7 +18,19 @@ public class Task {
         this.deadline = LocalDate.parse(date);
     }
     
-    public String getName() {
+    public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setDeadline(LocalDate deadline) {
+		this.deadline = deadline;
+	}
+
+	public String getName() {
     	return name;
     }
     
@@ -50,28 +62,5 @@ public class Task {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, deadline);
-    }
-
-    public static void main(String[] args) {
-        ArrayList<Task> arr = new ArrayList<>();
-        Task task1 = new Task("Todo",1,"2023-07-22");
-        Task task4 = new Task("Todo",1,"2023-07-22");
-        Task task2 = new Task("Sleep",2,"2015-06-05");
-        Task task3 = new Task("Drink",3,"2033-09-30");
-        arr.add(task1);
-        arr.add(task2);
-        arr.add(task3);
-        arr.add(task4);
-        
-        for (Task i: arr) {
-            System.out.println(i);
-        }
-
-        HashSet<Task> distinctTask = new HashSet<>(arr);
-        
-        for (Task i: distinctTask) {
-            System.out.println(i);
-        }
-        
     }
 }
