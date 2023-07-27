@@ -2,42 +2,6 @@ package day10.Practice;
 
 import java.util.ArrayList;
 
-class User {
-	
-	public int id;
-	public String name;
-	public String emailId;
-    
-    public User(int id, String name, String emailId) {
-        this.id = id;
-        this.name = name;
-        this.emailId = emailId;
-    }
-    
-}
-
-class UserAlreadyExistsException extends Exception {
-    public UserAlreadyExistsException(String message) {
-        super(message);
-    }
-}
-
-class UserManager {
-    private ArrayList<User> userList;
-
-    public UserManager() {
-        userList = new ArrayList<>();
-    }
-
-    public void register(User user) throws UserAlreadyExistsException {
-        for (User existingUser : userList) {
-            if (existingUser.emailId.equals(user.emailId)) {
-                throw new UserAlreadyExistsException("User with email " + user.emailId + " already exists.");
-            }
-        }
-        userList.add(user);
-    }
-}
 
 public class  ArrayException {
     public static void main(String[] args) {

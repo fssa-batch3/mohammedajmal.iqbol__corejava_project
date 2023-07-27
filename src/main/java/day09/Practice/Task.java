@@ -55,8 +55,8 @@ public class Task {
     	arr.add(t3);
     	arr.add(t4);
     	
-    	Collections.sort(arr,Comparator.comparing(Task::getDeadline));
-    	
+    	 Collections.sort(arr,Comparator.comparing(Task::getDeadline));
+    	 
     	 for (Task task : arr) {
              System.out.println(task.getId() + "," + task.getName() + "," + task.getDeadline());
          }

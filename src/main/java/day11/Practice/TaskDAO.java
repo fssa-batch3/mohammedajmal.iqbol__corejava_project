@@ -6,44 +6,6 @@ import java.sql.SQLException;
 
 import day11.Solved.ConnectionUtil;
 
-class Task {
-
-    private int id;
-    private String name;
-    private String status;
-
-    public Task(int id, String name, String status) {
-        this.id = id;
-        this.name = name;
-        this.status = status;
-    }
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-}
 
 class DAOException extends Exception {
     public DAOException(String message) {
@@ -52,7 +14,7 @@ class DAOException extends Exception {
 }
 
 public class TaskDAO {
-    public void createTask(Task task) throws DAOException , SQLException {
+    public void createTask(CreateTask task) throws DAOException , SQLException {
 
         Connection connection = ConnectionUtil.getConnection();
         String query = "INSERT INTO task (userID , name , status) VALUES (?,?,?);";
@@ -71,10 +33,10 @@ public class TaskDAO {
     }
 
     public static void main(String[] args) throws DAOException, SQLException {
-        Task t = new Task(1,"Wake Up Early","Not Completed");
-        Task t5 = new Task(3,"Early","Not Completed");
+        CreateTask t = new CreateTask(1,"Wake Up Early","Not Completed");
+        CreateTask t5 = new CreateTask(3,"Early","Not Completed");
 
-        Task t3 = new Task(2,"bath","Completed");
+        CreateTask t3 = new CreateTask(2,"bath","Completed");
         TaskDAO t1 = new TaskDAO();
         t1.createTask(t5);
 //        t1.createTask(t3);
